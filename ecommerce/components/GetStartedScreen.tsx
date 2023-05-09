@@ -1,5 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import Tabs from './Tabs'
+import HomeScreen from './HomeScreen'
 
 const GetStartedScreen = ({navigation}:any) => {
   return (
@@ -15,7 +17,7 @@ const GetStartedScreen = ({navigation}:any) => {
       </View>
 
       <View style={{marginTop:30}}>
-        <TouchableOpacity  style={{backgroundColor: 'white', borderRadius: 10}} onPress={()=>navigation.navigate("Home")}>
+        <TouchableOpacity  style={{backgroundColor: 'white', borderRadius: 10}} onPress={()=>navigation.navigate("Tabs")}>
           <Text style={styles.startbutton}>Get Started</Text>
         </TouchableOpacity>
       </View>
